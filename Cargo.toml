@@ -1,0 +1,14 @@
+[package]
+name = "pipeweld"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = { version = "4.3.19", features = ["cargo", "env", "derive", "wrap_help"] }
+eyre = "0.6.8"
+gtk = { version = "0.6.6", package = "gtk4", features = ["v4_8"] }
+leptos = { version = "0.4.6", features = ["nightly"] }
+tracing = "0.1.37"
+tracing-subscriber = { version = "0.3.17", features = ["env-filter"] }
